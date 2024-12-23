@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracker Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tracker Blocker</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="enableToggle">
+          <span class="slider"></span>
+        </label>
+        <span>Enable Blocking</span>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>Trackers Blocked</h3>
+        <p id="blockedCount">0</p>
+      </div>
+    </div>
+
+    <div class="categories">
+      <h3>Blocked by Category</h3>
+      <ul id="categoryList"></ul>
+    </div>
+
+    <div class="recent">
+      <h3>Recent Blocks</h3>
+      <ul id="recentList"></ul>
+    </div>
+
+    <div class="actions">
+      <button id="exportBtn">Export Report</button>
+      <button id="clearBtn">Clear Data</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
